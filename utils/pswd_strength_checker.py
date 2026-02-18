@@ -1,10 +1,10 @@
 
 def main():
-    password = input("Enter password to be checked: ")
+    password = input("Enter password to be checked: ").lower()
     badPasswords = {
         "admin", "password", "12345", "iloveyou", "qwerty",
         "abc123", "654321", "p@ssw0rd"
     }
 
     if password in badPasswords:
-        print("Password is very common")
+        print(f'Password: {password} is very common')
