@@ -8,7 +8,16 @@ nouppercase = False
 nodigits = False
 nosymbols = False
 
+def checkParams(param):
+    global nolowercase, nouppercase, nodigits, nosymbols
+
+    if param == "--nolower" or param == "-nl":
+        nolowercase = True
+
 def main(params):
+    for param in params:
+        checkParams(param)
+
     charset = ""
     if not nolowercase: charset += string.ascii_lowercase
     if not nouppercase: charset += string.ascii_uppercase
