@@ -9,6 +9,8 @@ def main():
 #check if password is in the common list
     if password in badPasswords:
         print(f'Password is very common!')
+    else:
+        print(f'Password is not in the bad passwords list.')
 
     if len(password) < 6:
         print(f'Password is really short')
