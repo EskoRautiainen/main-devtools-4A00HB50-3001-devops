@@ -10,10 +10,8 @@ def main():
     if password in badPasswords:
         print(f'Password is very common!')
 
-# check length
     if len(password) < 6:
         print(f'Password is really short')
-    else:
-        print(f'Seems like an ok length for password')
 
 
+# pswd_strength_checker
