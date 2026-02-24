@@ -48,6 +48,8 @@ def checkParams(param):
         exit(1)
 
 def main(params):
+    global amountToGenerate
+
     for param in params:
         checkParams(param)
 
