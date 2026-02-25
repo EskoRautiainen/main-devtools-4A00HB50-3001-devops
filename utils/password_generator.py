@@ -3,6 +3,8 @@ import string
 from datetime import datetime
 from utils.printFile import printFile
 
+passwordsArr = []
+
 length = 12
 amountToGenerate = 1
 
@@ -76,4 +78,5 @@ def main(params):
     while amountToGenerate > 0:
         password = "".join(random.choice(charset) for _ in range(length))
         print(password)
+        passwordsArr.append(password)
         amountToGenerate -= 1
