@@ -92,6 +92,15 @@ def main(params):
         print("Error: all character sets excluded.")
         return
 
+    if verbose:
+        print(f"nolowercase = {nolowercase}")
+        print(f"nouppercase = {nouppercase}")
+        print(f"nodigits = {nodigits}")
+        print(f"nosymbols = {nosymbols}")
+        print(f"save = {savepwds}")
+        print(f"amount to generate = {amountToGenerate}")
+        print(f"pwd length = {length}")
+
     while amountToGenerate > 0:
         password = "".join(random.choice(charset) for _ in range(length))
         print(password)
