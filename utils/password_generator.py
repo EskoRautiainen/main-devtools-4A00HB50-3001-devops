@@ -1,5 +1,6 @@
 import random
 import string
+import os
 from datetime import datetime
 from utils.printFile import printFile
 
@@ -14,11 +15,15 @@ nodigits = False
 nosymbols = False
 savepwds = False
 
-def save_passwords(passwords, filename="passwords.txt"):
-    with open(filename, 'a') as f:
+def save_passwords(passwords, filename="passwords.txt", subdir="./utils/docs"):
+    os.makedirs(subdir, exist_ok=True)
+    filepath = os.path.join(subdir, filename)
+
+    with open(filepath, 'a') as f:
         f.write(f"\n# {datetime.now()}\n")
         for pwd in passwords:
             f.write(pwd + "\n")
+    print(f"Passwords saved to {filepath}")
 
 def checkParams(param):
     global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols, savepwds
