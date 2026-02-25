@@ -15,7 +15,6 @@ nouppercase = False
 nodigits = False
 nosymbols = False
 savepwds = False
-interactive = False
 
 def save_passwords(passwords, subdir, filename="passwords.txt"):
     os.makedirs(subdir, exist_ok=True)
@@ -27,17 +26,12 @@ def save_passwords(passwords, subdir, filename="passwords.txt"):
             f.write(pwd + "\n")
     print(f"Passwords saved to {filepath}")
 
-def interactiveParams():
-    print("interactive questions here!")
-
 def checkParams(param):
-    global length, amountToGenerate, subdir, nolowercase, nouppercase, nodigits, nosymbols, savepwds, interactive
+    global length, amountToGenerate, subdir, nolowercase, nouppercase, nodigits, nosymbols, savepwds
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
         exit(1)
-    elif param == "--interactive" or param == "-i":
-        interactive = True
     elif param == "--nolower" or param == "-nl":
         nolowercase = True
     elif param == "--noupper" or param == "-nu":
@@ -84,9 +78,6 @@ def main(params):
 
     for param in params:
         checkParams(param)
-
-    if interactive:
-        interactiveParams()
 
     charset = ""
     if not nolowercase: charset += string.ascii_lowercase
