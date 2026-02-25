@@ -1,5 +1,6 @@
 import random
 import string
+from datetime import datetime
 from utils.printFile import printFile
 
 length = 12
@@ -9,6 +10,12 @@ nolowercase = False
 nouppercase = False
 nodigits = False
 nosymbols = False
+
+def save_passwords(passwords, filename="passwords.txt"):
+    with open(filename, 'a') as f:
+        f.write(f"\n# {datetime.now()}\n")
+        for pwd in passwords:
+            f.write(pwd + "\n")
 
 def checkParams(param):
     global length, amountToGenerate, nolowercase, nouppercase, nodigits, nosymbols
