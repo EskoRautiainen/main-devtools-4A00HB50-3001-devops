@@ -11,11 +11,14 @@ Options:
 --nodigits  | -nd                   –      Exclude digits
 --nosymbols | -ns                   –      Exclude symbols
 --length=<value> | -l=<value>       –      Add custom length for the password
+--multiple=<value> | -m=<value>     –      Customize amount of passwords made
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns
 Custom length setting example:
---length=25
+-pg --length=25
+Multiple password generation example:
+-pg --multiple=5
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Help:
 --Help                              –     Display utils/docs/pg_help.txt
