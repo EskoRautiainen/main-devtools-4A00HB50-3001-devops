@@ -13,3 +13,9 @@ def main():
 
     with open(filename, "r") as f:
         data = json.load(f)
+
+    for entry in data:
+        print(entry["id"], entry["name"], entry["age"])
+
+if __name__ == "__main__":
+    main()
