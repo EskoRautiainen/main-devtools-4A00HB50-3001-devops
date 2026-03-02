@@ -11,9 +11,10 @@ def main():
         print("Usage: python json2txt.py <filename>")
         sys.exit(1)
 
-
+    # Choose the file on CLI.
     filename = sys.argv[1]
 
+    # Convert JSON to Python data object.
     with open(filename, "r") as f:
         data = json.load(f)
 
