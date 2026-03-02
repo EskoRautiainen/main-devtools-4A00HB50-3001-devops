@@ -2,6 +2,9 @@
 import json
 import sys
 
+# Usage:
+# python json2txt.py <filename> (jsonfile.json)
+
 # Main function
 def main():
     print("This is JSON converter")
