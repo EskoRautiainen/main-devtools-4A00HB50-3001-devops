@@ -21,9 +21,16 @@ def main():
     with open(filename, "r") as f:
         data = json.load(f)
 
-    # Iterate over each entry and print results
-    for entry in data:
-        print(entry["id"], entry["name"], entry["age"])
+    # Iterate over each entry and print results based on file name
+        for entry in data:
+            if "jsonfile.json" in filename:
+            # Original people JSON
+            print(entry["id"], entry["name"], entry["age"])
+        elif "jsonfile2.json" in filename:
+            # Pizza JSON
+            print(entry["id"], entry["name"], entry["size"], entry["toppings"])
+        else: # Fallback for unexpected files
+        print("Wrong filename")
 
 # This line ensures that main() runs only when the script is executed directly
 if __name__ == "__main__":
