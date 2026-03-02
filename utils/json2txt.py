@@ -26,6 +26,9 @@ def main():
             if "jsonfile.json" in filename:
             # Original people JSON
             print(entry["id"], entry["name"], entry["age"])
+        elif "jsonfile2.json" in filename:
+            # Pizza JSON
+            print(entry["id"], entry["name"], entry["size"], entry["toppings"])
 
 # This line ensures that main() runs only when the script is executed directly
 if __name__ == "__main__":
