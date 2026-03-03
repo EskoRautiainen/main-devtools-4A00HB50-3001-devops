@@ -1,11 +1,37 @@
-{
+[
+    {
     "id": 1,
     "name": "bob",
     "age": 22
-}
-
-{
+    },
+    {
     "id": 2,
     "name": "alice",
     "age": 21
-}
+    },
+    {
+    "id": 3,
+    "name": "tony",
+    "age": 22
+    },
+    {
+    "id": 4,
+    "name": "mark",
+    "age": 32
+    },
+    {
+    "id": 5,
+    "name": "susan",
+    "age": 30
+    },
+    {
+    "id": 6,
+    "name": "andy",
+    "age": 30
+    },
+    {
+    "id": 7,
+    "name": "ben",
+    "age": 42
+    }
+]
