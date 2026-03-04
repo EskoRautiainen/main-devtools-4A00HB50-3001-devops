@@ -52,4 +52,13 @@ Command:
 - is longer than 6 characters
 - has no more than 2 same characters in row, eg "aa" is allowed but "aaa" is not
 
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+### Guess bad password hangman game
+
+A fun way to learn what passwords not to use. A hangman game of bad choices!!!
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Command:
+--guessbadpassword or -gbp
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
