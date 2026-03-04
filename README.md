@@ -35,4 +35,13 @@ Help:
 --Help                              –     Display utils/docs/pg_help.txt
 
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+### Password strenght checker
+
+This utility will ask for a password in a prompt and check if it passes the following tests:
+It will rate the strenght of your password on a scale of 0-7.
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+Command:
+--pswdchk                   - Asks for a password and analyses its strength
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
