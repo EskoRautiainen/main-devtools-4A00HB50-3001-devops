@@ -67,4 +67,16 @@ Convert JSON data from utils/<filename> to Python data object and display it in 
 It will adjust dynamically to the amount of keys in the JSON object.
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+This is JSON converter
+id: 1, name: Margherita, size: Medium, toppings: ['Cheese', 'Tomato']
+id: 2, name: Pepperoni, size: Large, toppings: ['Cheese', 'Tomato', 'Pepperoni']
+id: 3, name: Hawaiian, size: Medium, toppings: ['Cheese', 'Tomato', 'Ham', 'Pineapple']
 
+This is JSON converter
+id: 1, name: bob, age: 22
+id: 2, name: alice, age: 21
+id: 3, name: tony, age: 22
+
+Command:
+--jsonconverter utils/<filename> or -js utils/<filename>
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
