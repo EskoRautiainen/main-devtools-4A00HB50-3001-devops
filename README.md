@@ -1,10 +1,8 @@
 # Devtools Git group project
 
 This project is about working together on GitHub, managing version control and upholding to good Git practices.
-Tools are called with:
+We created a set of different CLI devtools that are called with:
 `python devtools.py <scriptName> <params> <params>`
-
-### Devtools we developed:
 
 # Password generator
 
@@ -12,9 +10,10 @@ The password generator can take multiple promps and generate strong passwords.
 
 ---
 Command:
---passwordgenerator | -pg           –   Generating password with default setting
+`--passwordgenerator` | `-pg`           –   Generating password with default setting
 
 ---
+```text
 Options:
 --nolower   | -nl                   –      Exclude lowercase characters
 --noupper   | -nu                   –      Exclude uppercase characters
@@ -25,14 +24,15 @@ Options:
 --save      | -same                 –      Save passwords to a default file
 --save=<path> | -s=<path>           –      Save passwords to custom path
 --verbose   | -v                    –      Show each options state
+```
 
 ---
 Combining options example:
--pg -nl -nd -ns
+`-pg -nl -nd -ns`
 Custom length setting example:
--pg --length=25
+`-pg --length=25`
 Multiple password generation example:
--pg --multiple=5
+`-pg --multiple=5`
 
 ---
 Help:
@@ -75,7 +75,7 @@ Convert JSON data from utils/<filename> to Python data object and display it in 
 It will adjust dynamically to the amount of keys in the JSON object.
 
 ---
-
+```text
 This is JSON converter
 id: 1, name: Margherita, size: Medium, toppings: ['Cheese', 'Tomato']
 id: 2, name: Pepperoni, size: Large, toppings: ['Cheese', 'Tomato', 'Pepperoni']
@@ -85,6 +85,7 @@ This is JSON converter
 id: 1, name: bob, age: 22
 id: 2, name: alice, age: 21
 id: 3, name: tony, age: 22
+```
 
 Command:
 `--jsonconverter utils/<filename>` or `-js utils/<filename>`
