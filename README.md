@@ -61,4 +61,10 @@ Command:
 --guessbadpassword or -gbp
 
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+### JSONconverter
+
+Convert JSON data from utils/<filename> to Python data object and display it in terminal.
+It will adjust dynamically to the amount of keys in the JSON object.
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
 
