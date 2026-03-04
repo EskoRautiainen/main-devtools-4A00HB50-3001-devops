@@ -23,6 +23,7 @@ Options:
 --save      | -same                 –      Save passwords to a default file
 --save=<path> | -s=<path>           –      Save passwords to custom path
 --verbose   | -v                    –      Show each options state
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns
@@ -30,6 +31,7 @@ Custom length setting example:
 -pg --length=25
 Multiple password generation example:
 -pg --multiple=5
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Help:
 --Help                              –     Display utils/docs/pg_help.txt
@@ -39,6 +41,7 @@ Help:
 
 This utility will ask for a password in a prompt and check if it passes the following tests:
 It will rate the strenght of your password on a scale of 0-7.
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Command:
 --pswdchk                   - Asks for a password and analyses its strength
@@ -56,6 +59,7 @@ Command:
 ### Guess bad password hangman game
 
 A fun way to learn what passwords not to use. A hangman game of bad choices!!!
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Command:
 --guessbadpassword or -gbp
@@ -65,6 +69,7 @@ Command:
 
 Convert JSON data from utils/<filename> to Python data object and display it in terminal.
 It will adjust dynamically to the amount of keys in the JSON object.
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 This is JSON converter
@@ -79,4 +84,5 @@ id: 3, name: tony, age: 22
 
 Command:
 --jsonconverter utils/<filename> or -js utils/<filename>
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
